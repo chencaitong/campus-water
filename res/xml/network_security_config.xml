@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <base-config cleartextTrafficPermitted="false"><trust-anchors><certificates src="system"/></trust-anchors></base-config>
+  <!-- Legacy school services: these exceptions do not encrypt HTTP. -->
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="false">sdmcjn.edu.cn</domain>
+    <domain includeSubdomains="false">authserver.sdmcjn.edu.cn</domain>
+    <domain includeSubdomains="false">ehall.sdmcjn.edu.cn</domain>
+    <domain includeSubdomains="false">ykt.sdmcjn.edu.cn</domain>
+    <domain includeSubdomains="false">111.14.213.18</domain>
+  </domain-config>
+</network-security-config>
